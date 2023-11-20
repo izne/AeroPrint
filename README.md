@@ -26,15 +26,18 @@ The .shell script:
     - loads the template
     - injects the live data
  - Stores the output (temp.prn) as a temporary file
- - Runs senddat.exe, sending temp.prn over the Ethernet to the IP:PORT of a BIXOLON SRP-300 printer.
+ - Runs senddat.exe, sending temp.prn over the Ethernet to the IP:PORT of a BIXOLON SRP-300 printer
+  - Removes the temporary temp.prn file
 
 # Result
 ![METAR](/images/metar.jpg "METAR Receipt")
 
 
 # References
-https://bixolon.com/_upload/manual/Manual_Command_Thermal_POS_Printer_ENG_V1.00[25].pdf
+[BIXOLON SRP-300 ESC/POS Commands Reference](https://bixolon.com/_upload/manual/Manual_Command_Thermal_POS_Printer_ENG_V1.00[25].pdf)
 
-https://reference.epson-biz.com/modules/ref_escpos/index.php?content_id=272
+[ESC/POS Examples](https://reference.epson-biz.com/modules/ref_escpos/index.php?content_id=272)
 
-https://barcode.tec-it.com/de/Code39FullASCII?data=Aa-1234
+[SENDDAT.EXE Tool from EPSON](https://download.epson-biz.com/modules/pos/index.php?page=single_soft&cid=5027&scat=47&pcat=3)
+
+[Validate barcodes with this tool](https://barcode.tec-it.com/de/Code39FullASCII?data=Aa-1234)
