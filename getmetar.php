@@ -1,6 +1,5 @@
 <?php
 
-$cmd = "/c/Users/izne/Downloads/senddat.exe -t -b9600 data.txt 192.168.178.212:9100";
 $stations = ['LBWN', 'LBBG', 'LBSF', 'EDHI', 'EHAM'];
 $source = "https://metar.vatsim.net/metar.php?id=all";
 
