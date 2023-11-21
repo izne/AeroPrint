@@ -26,8 +26,8 @@ Inside the template file there are placeholders, like %localTime% and %metarData
 
 The .shell script:
  - Runs the PHP script, which:
-    - fetches METAR data from VATSIM)
-    - loads the template
+    - fetches data from METAR from VATSIM or FPL from SIMBRIEF)
+    - loads the template: standard template esc.pos
     - injects the live data
  - Stores the output (temp.prn) as a temporary file
  - Runs senddat.exe, sending temp.prn over the Ethernet to the IP:PORT of a BIXOLON SRP-300 printer
@@ -35,6 +35,7 @@ The .shell script:
 
 # Result
 ![METAR](/images/metar.jpg "METAR Receipt")
+![SIMBRIEF](/images/simbrief.jpg "SIMBRIEF Receipt")
 
 
 # References
