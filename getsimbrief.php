@@ -31,13 +31,13 @@ $pFuelTaxi = $dataArray['fuel']['taxi'];
 
 
 $escposTemplate = file_get_contents("esc.pos");
+// \"FUEL: TAXI $pFuelTaxi TO $pFuelTakeoff ENROUTE $pTotalBurn\" LF
 $contentData = 
 "
 \"$pCallsign $pAcftType $pAcftReg AIRAC $pAirac \" LF
 \"$pOrig  $pRoute  $pDest \" LF
 \"DIST $pRouteDist ALT $pAlternate DIST $pDistToAlt \" LF
 \"PAX $pPax CARGO $pCargo PAYLOAD $pPayload TOW $pEstTow\" LF
-\"FUEL: TAXI $pFuelTaxi TO $pFuelTakeoff ENROUTE $pTotalBurn\" LF
 ";
 
 $localTime = date("H:i").'L';
